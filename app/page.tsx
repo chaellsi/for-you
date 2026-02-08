@@ -3,10 +3,10 @@
 import React, { useState } from "react";
 import Lottie from "./LottieClient";
 import styled from "styled-components";
-import bunnyCry from "./animations/bunnyCry.json";
-import bunnyPlease from "./animations/bunnyPlease.json";
-import bunnyYes from "./animations/bunnyYes.json";
-import bunnyPunch from "./animations/bunnyPunch.json";
+import bunnyCryAnim from "./animations/bunnyCry.json";
+import bunnyPleaseAnim from "./animations/bunnyPlease.json";
+import bunnyYesAnim from "./animations/bunnyYes.json";
+import bunnyPunchAnim from "./animations/bunnyPunch.json";
 import Button from "./components/Button";
 
 const getRandomPosition = () => {
@@ -24,7 +24,7 @@ const getRandomPosition = () => {
 }
 
 function Home() {
-  const bunnyCryOptions = {
+  const bunnyCry = {
     loop: true,
     autoplay: true,
     animationData: bunnyCry,
@@ -32,10 +32,10 @@ function Home() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  const bunnyPleaseOptions = {
+  const bunnyPlease = {
     loop: true,
     autoplay: true,
-    animationData: bunnyPlease,
+    animationData: bunnyPleaseAnim,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -43,7 +43,7 @@ function Home() {
   const bunnyYesOptions = {
     loop: true,
     autoplay: true,
-    animationData: bunnyYes,
+    animationData: bunnyYesAnim,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -51,7 +51,7 @@ function Home() {
   const bunnyPunchOptions = {
     loop: true,
     autoplay: true,
-    animationData: bunnyPunch,
+    animationData: bunnyPunchAnim,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
