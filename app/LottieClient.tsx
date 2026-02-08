@@ -1,3 +1,4 @@
 "use client";
-import { Player } from "lottie-react";
-export default Player;
+import dynamic from "next/dynamic";
+const Lottie = dynamic (() = import("react-lottie"), { ssr: false });
+export default Lottie;
