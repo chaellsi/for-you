@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Lottie from "react-lottie";
+import Lottie from "./LottieClient";
 import styled from "styled-components";
 import bunnyCry from "./animations/bunnyCry.json";
 import bunnyPlease from "./animations/bunnyPlease.json";
